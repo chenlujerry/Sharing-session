@@ -1,0 +1,260 @@
+以下有循环、
+
+ 1、题目：如果parentCode的值是'0'的话，这个对象放在第一顺序，parentCode的值不是'0'的寻找第一顺序里面的dictCode的值，如果相等，这个对象则是第一顺序的后辈，第一顺序为祖元素，后辈为父元素，在继续排序，如果parentCode的值与父元素的dictCode值相等，当前的对象则是子元素，以此往下排序。
+
+var arr =  [
+        {
+            "dictId": 1,
+            "dictCode": "a1",
+            "dictName": "文物年代",
+            "parentCode": "a",
+            "dictValue": "dynasty_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:44:22"
+        },
+        {
+            "dictId": 1,
+            "dictCode": "aa1",
+            "dictName": "文物年代",
+            "parentCode": "a",
+            "dictValue": "dynasty_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:44:22"
+        },
+        {
+            "dictId": 1,
+            "dictCode": "a2",
+            "dictName": "文物年代",
+            "parentCode": "a1",
+            "dictValue": "dynasty_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:44:22"
+        },
+        {
+            "dictId": 1,
+            "dictCode": "a3",
+            "dictName": "文物年代",
+            "parentCode": "a2",
+            "dictValue": "dynasty_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:44:22"
+        },
+        {
+            "dictId": 1,
+            "dictCode": "b1",
+            "dictName": "文物年代",
+            "parentCode": "b",
+            "dictValue": "dynasty_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:44:22"
+        },
+        {
+            "dictId": 1,
+            "dictCode": "b2",
+            "dictName": "文物年代",
+            "parentCode": "b1",
+            "dictValue": "dynasty_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:44:22"
+        },
+        {
+            "dictId": 1,
+            "dictCode": "g1",
+            "dictName": "文物年代",
+            "parentCode": "g",
+            "dictValue": "dynasty_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:44:22"
+        },
+        {
+            "dictId": 1,
+            "dictCode": "a",
+            "dictName": "文物年代",
+            "parentCode": "0",
+            "dictValue": "dynasty_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:44:22"
+        },
+        {
+            "dictId": 2,
+            "dictCode": "b",
+            "dictName": "文物价值",
+            "parentCode": "0",
+            "dictValue": "value_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:45:28"
+        },
+        {
+            "dictId": 3,
+            "dictCode": "c",
+            "dictName": "文物材质",
+            "parentCode": "0",
+            "dictValue": "material_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:46:06"
+        },
+        {
+            "dictId": 4,
+            "dictCode": "d",
+            "dictName": "文物来源",
+            "parentCode": "0",
+            "dictValue": "source_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:46:36"
+        },
+        {
+            "dictId": 6,
+            "dictCode": "e",
+            "dictName": "文物标签",
+            "parentCode": "0",
+            "dictValue": "tags_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:47:34"
+        },
+        {
+            "dictId": 7,
+            "dictCode": "f",
+            "dictName": "媒体类型",
+            "parentCode": "0",
+            "dictValue": "media_type",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:48:05"
+        },
+        {
+            "dictId": 8,
+            "dictCode": "g",
+            "dictName": "搜索热词",
+            "parentCode": "0",
+            "dictValue": "search_hot_keywords",
+            "sequence": 1,
+            "createTime": "2018-04-13 17:48:22"
+        }
+    ];
+
+方法一：1：先判断parentCode 的值是否等于0，如果是的话，这个对象放到一个数组中。
+        2：再次循环整个数组，如果对象的dictCode的值等于 parentCode的值，给当前dictCodede这个对象添加属性son，并把当前parentCode的这个对象push进去，
+	3：需要判断当前那个对象中是否有son这个属性，如果有的话，直接push ，如果没有先清空son这个数组，在push,
+var parent= [];
+for(let i = 0;i<arr.length;i++){
+	if(arr[i].parentCode == 0){
+		parent.push(arr[i])
+	}else{
+		arr.forEach(function( ){
+			if(item.dictCode == arr[i].parentCode){
+				if(item.son){
+					item.son.push(arr[i])
+				}else{
+					item.son = [];
+					item.son.push(arr[i])
+				}
+				
+			}
+		})
+	}
+}
+方法二：递归
+var mapObj = {}
+arr.forEach((item)=>{
+	mapObj[item.dictCode] = item
+})
+function getTop(item){
+	if (item.parentCode == 0) {
+		if (!item.push) {
+			parent.push(item)
+			item.push = true
+		}
+	} else {
+		mapObj[item.parentCode].sons = (mapObj[item.parentCode].sons|| [])
+		if (!item.push) {
+			mapObj[item.parentCode].sons.push(item)
+			item.push = true
+		}
+		getTop(mapObj[item.parentCode])
+	}
+}
+arr.forEach((item)=>{
+	getTop(item)
+})
+
+方法三：
+var mapobj = {}
+      
+  arr.forEach( (item)=> {
+  
+          mapobj[item.dictCode] = item
+      
+  })
+      
+ 	 var obj = []
+    
+    	 function getTop(item) {
+     
+      	       if (item.parentCode == 0) {
+ 
+                   obj.push(item)
+                
+          
+ 	        } else {
+  
+  			 mapobj[item.parentCode].sons = ( mapobj[item.parentCode].sons || [])
+ 
+                          mapobj[item.parentCode].sons.push(item)
+          
+  		        }
+      
+  		}
+       
+	 arr.forEach( (item)=> {
+    
+            getTop(item)
+     
+   	})    
+ 
+2：题目  x? 
+        if('a'in x  && !('a' in x)){}
+方法:
+
+        const x = new Proxy({},{has(t){
+			return t._ = !t._
+				}
+			})
+3：闭包，原理解决作用狱链，外部不能调用内部的变量。	
+
+
+
+4：排序
+		
+//冒泡排序
+//
+var arr= [5,9,1,4,6,3,8,12,56,24,32,19]		
+function arrSort (arr) {
+				
+let length = arr.length;
+				
+for(let i = 0; i < length; i++) {
+					
+var flag = true
+								
+for(let j = 0; j < length-1-i; j++) {
+
+		count++	
+		if( arr[j] > arr[j+1]) {
+
+			let temp = arr[j];
+			arr[j] = arr[j+1];
+			
+			arr[j+1] = temp;						
+			flag = false
+				
+			}
+					
+		}if (flag) {
+
+			return arr					
+			}
+				
+		}				
+			return arr;
+		}		
+console.log(arrSort([5,9,1,4,6,3,8,12,56,24,32,19]),count)
+  
