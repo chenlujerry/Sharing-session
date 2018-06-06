@@ -1,12 +1,13 @@
-ÒÔÏÂÓĞÑ­»·¡¢
+dev
+ä»¥ä¸‹æœ‰å¾ªç¯ã€
 
- 1¡¢ÌâÄ¿£ºÈç¹ûparentCodeµÄÖµÊÇ'0'µÄ»°£¬Õâ¸ö¶ÔÏó·ÅÔÚµÚÒ»Ë³Ğò£¬parentCodeµÄÖµ²»ÊÇ'0'µÄÑ°ÕÒµÚÒ»Ë³ĞòÀïÃæµÄdictCodeµÄÖµ£¬Èç¹ûÏàµÈ£¬Õâ¸ö¶ÔÏóÔòÊÇµÚÒ»Ë³ĞòµÄºó±²£¬µÚÒ»Ë³ĞòÎª×æÔªËØ£¬ºó±²Îª¸¸ÔªËØ£¬ÔÚ¼ÌĞøÅÅĞò£¬Èç¹ûparentCodeµÄÖµÓë¸¸ÔªËØµÄdictCodeÖµÏàµÈ£¬µ±Ç°µÄ¶ÔÏóÔòÊÇ×ÓÔªËØ£¬ÒÔ´ËÍùÏÂÅÅĞò¡£
+ 1ã€é¢˜ç›®ï¼šå¦‚æœparentCodeçš„å€¼æ˜¯'0'çš„è¯ï¼Œè¿™ä¸ªå¯¹è±¡æ”¾åœ¨ç¬¬ä¸€é¡ºåºï¼ŒparentCodeçš„å€¼ä¸æ˜¯'0'çš„å¯»æ‰¾ç¬¬ä¸€é¡ºåºé‡Œé¢çš„dictCodeçš„å€¼ï¼Œå¦‚æœç›¸ç­‰ï¼Œè¿™ä¸ªå¯¹è±¡åˆ™æ˜¯ç¬¬ä¸€é¡ºåºçš„åè¾ˆï¼Œç¬¬ä¸€é¡ºåºä¸ºç¥–å…ƒç´ ï¼Œåè¾ˆä¸ºçˆ¶å…ƒç´ ï¼Œåœ¨ç»§ç»­æ’åºï¼Œå¦‚æœparentCodeçš„å€¼ä¸çˆ¶å…ƒç´ çš„dictCodeå€¼ç›¸ç­‰ï¼Œå½“å‰çš„å¯¹è±¡åˆ™æ˜¯å­å…ƒç´ ï¼Œä»¥æ­¤å¾€ä¸‹æ’åºã€‚
 
 var arr =  [
         {
             "dictId": 1,
             "dictCode": "a1",
-            "dictName": "ÎÄÎïÄê´ú",
+            "dictName": "æ–‡ç‰©å¹´ä»£",
             "parentCode": "a",
             "dictValue": "dynasty_type",
             "sequence": 1,
@@ -15,7 +16,7 @@ var arr =  [
         {
             "dictId": 1,
             "dictCode": "aa1",
-            "dictName": "ÎÄÎïÄê´ú",
+            "dictName": "æ–‡ç‰©å¹´ä»£",
             "parentCode": "a",
             "dictValue": "dynasty_type",
             "sequence": 1,
@@ -24,7 +25,7 @@ var arr =  [
         {
             "dictId": 1,
             "dictCode": "a2",
-            "dictName": "ÎÄÎïÄê´ú",
+            "dictName": "æ–‡ç‰©å¹´ä»£",
             "parentCode": "a1",
             "dictValue": "dynasty_type",
             "sequence": 1,
@@ -33,7 +34,7 @@ var arr =  [
         {
             "dictId": 1,
             "dictCode": "a3",
-            "dictName": "ÎÄÎïÄê´ú",
+            "dictName": "æ–‡ç‰©å¹´ä»£",
             "parentCode": "a2",
             "dictValue": "dynasty_type",
             "sequence": 1,
@@ -42,7 +43,7 @@ var arr =  [
         {
             "dictId": 1,
             "dictCode": "b1",
-            "dictName": "ÎÄÎïÄê´ú",
+            "dictName": "æ–‡ç‰©å¹´ä»£",
             "parentCode": "b",
             "dictValue": "dynasty_type",
             "sequence": 1,
@@ -51,7 +52,7 @@ var arr =  [
         {
             "dictId": 1,
             "dictCode": "b2",
-            "dictName": "ÎÄÎïÄê´ú",
+            "dictName": "æ–‡ç‰©å¹´ä»£",
             "parentCode": "b1",
             "dictValue": "dynasty_type",
             "sequence": 1,
@@ -60,7 +61,7 @@ var arr =  [
         {
             "dictId": 1,
             "dictCode": "g1",
-            "dictName": "ÎÄÎïÄê´ú",
+            "dictName": "æ–‡ç‰©å¹´ä»£",
             "parentCode": "g",
             "dictValue": "dynasty_type",
             "sequence": 1,
@@ -69,7 +70,7 @@ var arr =  [
         {
             "dictId": 1,
             "dictCode": "a",
-            "dictName": "ÎÄÎïÄê´ú",
+            "dictName": "æ–‡ç‰©å¹´ä»£",
             "parentCode": "0",
             "dictValue": "dynasty_type",
             "sequence": 1,
@@ -78,7 +79,7 @@ var arr =  [
         {
             "dictId": 2,
             "dictCode": "b",
-            "dictName": "ÎÄÎï¼ÛÖµ",
+            "dictName": "æ–‡ç‰©ä»·å€¼",
             "parentCode": "0",
             "dictValue": "value_type",
             "sequence": 1,
@@ -87,7 +88,7 @@ var arr =  [
         {
             "dictId": 3,
             "dictCode": "c",
-            "dictName": "ÎÄÎï²ÄÖÊ",
+            "dictName": "æ–‡ç‰©æè´¨",
             "parentCode": "0",
             "dictValue": "material_type",
             "sequence": 1,
@@ -96,7 +97,7 @@ var arr =  [
         {
             "dictId": 4,
             "dictCode": "d",
-            "dictName": "ÎÄÎïÀ´Ô´",
+            "dictName": "æ–‡ç‰©æ¥æº",
             "parentCode": "0",
             "dictValue": "source_type",
             "sequence": 1,
@@ -105,7 +106,7 @@ var arr =  [
         {
             "dictId": 6,
             "dictCode": "e",
-            "dictName": "ÎÄÎï±êÇ©",
+            "dictName": "æ–‡ç‰©æ ‡ç­¾",
             "parentCode": "0",
             "dictValue": "tags_type",
             "sequence": 1,
@@ -114,7 +115,7 @@ var arr =  [
         {
             "dictId": 7,
             "dictCode": "f",
-            "dictName": "Ã½ÌåÀàĞÍ",
+            "dictName": "åª’ä½“ç±»å‹",
             "parentCode": "0",
             "dictValue": "media_type",
             "sequence": 1,
@@ -123,7 +124,7 @@ var arr =  [
         {
             "dictId": 8,
             "dictCode": "g",
-            "dictName": "ËÑË÷ÈÈ´Ê",
+            "dictName": "æœç´¢çƒ­è¯",
             "parentCode": "0",
             "dictValue": "search_hot_keywords",
             "sequence": 1,
@@ -131,9 +132,9 @@ var arr =  [
         }
     ];
 
-·½·¨Ò»£º1£ºÏÈÅĞ¶ÏparentCode µÄÖµÊÇ·ñµÈÓÚ0£¬Èç¹ûÊÇµÄ»°£¬Õâ¸ö¶ÔÏó·Åµ½Ò»¸öÊı×éÖĞ¡£
-        2£ºÔÙ´ÎÑ­»·Õû¸öÊı×é£¬Èç¹û¶ÔÏóµÄdictCodeµÄÖµµÈÓÚ parentCodeµÄÖµ£¬¸øµ±Ç°dictCodedeÕâ¸ö¶ÔÏóÌí¼ÓÊôĞÔson£¬²¢°Ñµ±Ç°parentCodeµÄÕâ¸ö¶ÔÏópush½øÈ¥£¬
-	3£ºĞèÒªÅĞ¶Ïµ±Ç°ÄÇ¸ö¶ÔÏóÖĞÊÇ·ñÓĞsonÕâ¸öÊôĞÔ£¬Èç¹ûÓĞµÄ»°£¬Ö±½Ópush £¬Èç¹ûÃ»ÓĞÏÈÇå¿ÕsonÕâ¸öÊı×é£¬ÔÚpush,
+æ–¹æ³•ä¸€ï¼š1ï¼šå…ˆåˆ¤æ–­parentCode çš„å€¼æ˜¯å¦ç­‰äº0ï¼Œå¦‚æœæ˜¯çš„è¯ï¼Œè¿™ä¸ªå¯¹è±¡æ”¾åˆ°ä¸€ä¸ªæ•°ç»„ä¸­ã€‚
+        2ï¼šå†æ¬¡å¾ªç¯æ•´ä¸ªæ•°ç»„ï¼Œå¦‚æœå¯¹è±¡çš„dictCodeçš„å€¼ç­‰äº parentCodeçš„å€¼ï¼Œç»™å½“å‰dictCodedeè¿™ä¸ªå¯¹è±¡æ·»åŠ å±æ€§sonï¼Œå¹¶æŠŠå½“å‰parentCodeçš„è¿™ä¸ªå¯¹è±¡pushè¿›å»ï¼Œ
+	3ï¼šéœ€è¦åˆ¤æ–­å½“å‰é‚£ä¸ªå¯¹è±¡ä¸­æ˜¯å¦æœ‰sonè¿™ä¸ªå±æ€§ï¼Œå¦‚æœæœ‰çš„è¯ï¼Œç›´æ¥push ï¼Œå¦‚æœæ²¡æœ‰å…ˆæ¸…ç©ºsonè¿™ä¸ªæ•°ç»„ï¼Œåœ¨push,
 var parent= [];
 for(let i = 0;i<arr.length;i++){
 	if(arr[i].parentCode == 0){
@@ -152,7 +153,7 @@ for(let i = 0;i<arr.length;i++){
 		})
 	}
 }
-·½·¨¶ş£ºµİ¹é
+æ–¹æ³•äºŒï¼šé€’å½’
 var mapObj = {}
 arr.forEach((item)=>{
 	mapObj[item.dictCode] = item
@@ -176,7 +177,7 @@ arr.forEach((item)=>{
 	getTop(item)
 })
 
-·½·¨Èı£º
+æ–¹æ³•ä¸‰ï¼š
 var mapobj = {}
       
   arr.forEach( (item)=> {
@@ -210,21 +211,21 @@ var mapobj = {}
      
    	})    
  
-2£ºÌâÄ¿  x? 
+2ï¼šé¢˜ç›®  x? 
         if('a'in x  && !('a' in x)){}
-·½·¨:
+æ–¹æ³•:
 
         const x = new Proxy({},{has(t){
 			return t._ = !t._
 				}
 			})
-3£º±Õ°ü£¬Ô­Àí½â¾ö×÷ÓÃÓüÁ´£¬Íâ²¿²»ÄÜµ÷ÓÃÄÚ²¿µÄ±äÁ¿¡£	
+3ï¼šé—­åŒ…ï¼ŒåŸç†è§£å†³ä½œç”¨ç‹±é“¾ï¼Œå¤–éƒ¨ä¸èƒ½è°ƒç”¨å†…éƒ¨çš„å˜é‡ã€‚	
 
 
 
-4£ºÅÅĞò
+4ï¼šæ’åº
 		
-//Ã°ÅİÅÅĞò
+//å†’æ³¡æ’åº
 //
 var arr= [5,9,1,4,6,3,8,12,56,24,32,19]		
 function arrSort (arr) {
